@@ -69,7 +69,7 @@ server <- function(input, output) {
     data <- get_dfp_data(as.numeric(input$empresa),
                          type_docs = "DRE",  # Demonstrativo
                          type_format = "con",  # Consolidado do grupo
-                         cache_folder = paste0("cache/", input$empresa),
+                         #cache_folder = paste0("cache/", input$empresa),
                          #use_memoise = TRUE,  # Considerar usar
                          do_shiny_progress = TRUE)
     data <- data$`DF Consolidado - Demonstração do Resultado`
